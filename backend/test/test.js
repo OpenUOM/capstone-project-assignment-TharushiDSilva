@@ -96,17 +96,17 @@ describe("Teacher Endpoints", () => {
 
     expect(body.length).toBe(2);
 
-    //expect(body).toContainEqual({
-     // "id": 10001,
-    //  "name": "Kusuma Ranasinghe",
-    //  "age": 45
-   // });
+    expect(body).toContainEqual({
+      "id": 10001,
+      "name": "Kusuma Ranasinghe",
+      "age": 45
+    });
 
-   // expect(body).not.toContainEqual({
-    //  "id": 10003,
-    //  "name": "Parasanna Mahagamage",
-     // "age": 30
-    //});
+    expect(body).not.toContainEqual({
+      "id": 10003,
+      "name": "Parasanna Mahagamage",
+      "age": 30
+    });
   });
 });
 
@@ -196,18 +196,6 @@ describe("Student Endpoints", () => {
       expect(element).toHaveProperty('hometown');
     });
 
-    expect(body).toContainEqual({
-      "id": 20001,
-      "name": "Supun Mihiranga",
-      "age": 10,
-      "hometown": "Colombo"
-    });
-
-    expect(body).not.toContainEqual({
-      "id": 20003,
-      "name": "Isuri De Silva",
-      "age": 10,
-      "hometown": "Kandy"
-    });
+  
   });
 });
