@@ -11,7 +11,7 @@ test('Testing search Teachers', async t => {
     const table = Selector('#teacher-table')
     const rowCount = await table.find('tr').count;
 
-    let tdText = await table.find('tr').nth(rowCount-1).innerText;
+    let tdText = await table.find('tr').nth(rowCount+2).innerText;
     await t.expect(rowCount).eql(2)
 
     await t.navigateTo("/dbinitialize");
