@@ -196,6 +196,18 @@ describe("Student Endpoints", () => {
       expect(element).toHaveProperty('hometown');
     });
 
-  
+    expect(body).toContainEqual({
+      "id": 20001,
+      "name": "Supun Mihiranga",
+      "age": 10,
+      "hometown": "Colombo"
+    });
+
+    expect(body).not.toContainEqual({
+      "id": 20003,
+      "name": "Isuri De Silva",
+      "age": 10,
+      "hometown": "Kandy"
+    });
   });
 });
