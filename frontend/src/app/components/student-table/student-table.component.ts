@@ -61,6 +61,7 @@ export class StudentTableComponent implements OnInit {
           foundItems.push(student)
         }
       });
+      console.log(foundItems);
       this.studentData = foundItems;
     }
   }
