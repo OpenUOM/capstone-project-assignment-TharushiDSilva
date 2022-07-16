@@ -204,7 +204,7 @@
 
           this.http = http;
 
-          if (_environments_environment__WEBPACK_IMPORTED_MODULE_1__["environment"].production == false) {
+          if (_environments_environment__WEBPACK_IMPORTED_MODULE_1__["environment"].production === false) {
             this.ROOT_URL = 'test';
           } else {
             this.ROOT_URL = 'api';
